@@ -1,11 +1,11 @@
 const express = require('express')
 const User = require('../model/user')
 const router = express.Router()
-// const axios = require('axios');
+const axios = require('axios');
 
 
-// const { request_horoscopo } = require('../utils/requests')
-// const { authenticateToken, getGeolocation, authenticateHost } = require('../middlewares/middleware')
+const { request_horoscopo } = require('../utils/requests')
+const { authenticateToken, getGeolocation, authenticateHost } = require('../middlewares/middleware')
 
 router.get('/users', (req, res) => {
 //     User.find()
