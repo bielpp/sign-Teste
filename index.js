@@ -7,7 +7,7 @@ app.use(cors())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 // require('./controllers/authController')(app)
-// require('./controllers/root')(app)
+require('./controllers/root')(app)
 
 
 
