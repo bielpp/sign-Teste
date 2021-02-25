@@ -12,4 +12,4 @@ require('./controllers/root')(app)
 
 
 
-app.listen(process.env.PORT || 8080, console.log('iniciando server...'))
+app.listen(process.env.PORT || 8080)
