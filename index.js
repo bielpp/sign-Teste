@@ -7,7 +7,7 @@ const bodyParser = require('body-parser')
 // app.use(bodyParser.urlencoded({ extended: true }))
 // app.use(bodyParser.json())
 // require('./controllers/authController')(app)
-// require('./controllers/root')(app)
+require('./controllers/root')(app)
 
 
 app.get('/', (req, res) => {
