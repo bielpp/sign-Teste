@@ -1,11 +1,11 @@
 const express = require('express')
-const User = require('../model/user')
+// const User = require('../model/user')
 const router = express.Router()
-const axios = require('axios');
+// const axios = require('axios');
 
 
-const { request_horoscopo } = require('../utils/requests')
-const { authenticateToken, getGeolocation, authenticateHost } = require('../middlewares/middleware')
+// const { request_horoscopo } = require('../utils/requests')
+// const { authenticateToken, getGeolocation, authenticateHost } = require('../middlewares/middleware')
 
 router.get('/users', (req, res) => {
 //     User.find()
@@ -23,26 +23,26 @@ router.get('/users', (req, res) => {
 
 
 
-const search = (name, lat, long, place, place_code, year, mouth, date, Timezone) => {
-    return {
-        "name": name,
-        "place": {
-            "name": `${place},${place_code}`,
-            "longitude": long,
-            "latitude": lat,
-            "timeZoneId": Timezone
-        },
-        "year": year,
-        "month": mouth,
-        "date": date,
-        "hour": 23,
-        "minutes": 30,
-        "seconds": 0,
-        "options": {
-            "Ayanamsa": "LAHARI"
-        }
-    }
-}
+// const search = (name, lat, long, place, place_code, year, mouth, date, Timezone) => {
+//     return {
+//         "name": name,
+//         "place": {
+//             "name": `${place},${place_code}`,
+//             "longitude": long,
+//             "latitude": lat,
+//             "timeZoneId": Timezone
+//         },
+//         "year": year,
+//         "month": mouth,
+//         "date": date,
+//         "hour": 23,
+//         "minutes": 30,
+//         "seconds": 0,
+//         "options": {
+//             "Ayanamsa": "LAHARI"
+//         }
+//     }
+// }
 
 
 
